@@ -59,6 +59,7 @@ def convert_id(document):
     return document
 
 # allows user to get the sprites collection and what is inside
+# it will get the entire collection, not able to GET a specific item using the "id" for example
 @app.get("/sprites")
 async def get_sprites():
     #created empty lists that fill hold hte sprites from MongoDB
